@@ -65,24 +65,24 @@ export function colors(darkMode: boolean): Colors {
 
     // backgrounds
     tableHeader: darkMode ? '#303E46' : '#F9F9F9',
-    background: darkMode ? '#243036' : '#ffffff',
+    background: darkMode ? '#1e222d' : '#ffffff',
     bg1: darkMode ? '#212429' : '#FFFFFF',
     bg2: darkMode ? '#222c31' : '#F7F8FA',
     bg3: darkMode ? '#40444F' : '#dcdbdc',
     bg3Opacity4: darkMode ? '#40444F69' : '#69dcdbdc69',
     bg4: darkMode ? '#565A69' : '#CED0D9',
     bg5: darkMode ? '#6C7284' : '#888D9B',
-    bg7: darkMode ? '#31CB9E' : '#98e5ce',
-    bg8: darkMode ? '#1d7a5f' : '#31CB9E',
+    bg7: darkMode ? '#ffa100' : '#98e5ce',
+    bg8: darkMode ? '#1d7a5f' : '#ffa100',
     bg9: darkMode ? '#1d2a32' : '#ecebeb',
     bg10: darkMode ? '#263239' : '#f5f5f5',
     bg11: darkMode ? '#1b2226' : '#ebeaea',
-    bg12: darkMode ? '#11171a' : '#f5f5f5',
+    bg12: darkMode ? '#131722' : '#f5f5f5',
     bg13: darkMode ? '#1f292e' : '#e8e9ed',
     bg14: darkMode ? '#40505a' : '#a9a9a9',
     bg15: darkMode ? '#1f292e' : '#f5f5f5',
     bg16: darkMode ? '#1f292e' : '#ffffff',
-    bg17: darkMode ? '#31cb9e33' : '#31cb9e1a',
+    bg17: darkMode ? '#ffa10033' : '#ffa1001a',
     bg18: darkMode ? '#1a4052' : '#ecebeb',
     bg19: darkMode ? '#222c31' : '#ffffff',
     bg20: darkMode ? '#243036' : '#F5F5F5',
@@ -103,24 +103,24 @@ export function colors(darkMode: boolean): Colors {
     advancedBorder: darkMode ? '#303e46' : '#dcdbdc',
 
     //primary colors
-    primary: '#31CB9E',
+    primary: '#ffa100',
     primary2: darkMode ? '#3680E7' : '#3680E7',
     primary3: darkMode ? '#4D8FEA' : '#4D8FEA',
     primary4: darkMode ? '#376bad70' : '#376bad70',
-    primary5: darkMode ? '#153d6f70' : '#31cb9e',
+    primary5: darkMode ? '#153d6f70' : '#ffa100',
 
     // color text
     primaryText2: darkMode ? '#a7b6bd' : '#13191b',
 
     // secondary colors
-    secondary1: darkMode ? '#31cb9e' : '#31cb9e',
+    secondary1: darkMode ? '#ffa100' : '#ffa100',
     secondary2: darkMode ? '#17000b26' : '#17000b26',
     secondary3: darkMode ? '#17000b26' : '#17000b26',
     secondary4: '#2FC99E',
 
     // border colors
     border: darkMode ? '#40505A' : '#dcdbdc ',
-    btnOutline: darkMode ? '#31cb9e' : '#333333',
+    btnOutline: darkMode ? '#ffa100' : '#333333',
 
     // table colors
     oddRow: darkMode ? '#283339' : '#ffffff',
@@ -131,15 +131,15 @@ export function colors(darkMode: boolean): Colors {
     red1: '#FF6871',
     red2: '#F82D3A',
     red3: '#D60000',
-    green: '#31CB9E',
+    green: '#ffa100',
     green1: '#27AE60',
     yellow1: '#FFE270',
     yellow2: '#F3841E',
-    blue1: '#31cb9e',
+    blue1: '#ffa100',
     warning: '#FF9901',
     lightBlue: '#78d5ff',
     darkBlue: '#1183b7',
-    blue: darkMode ? '#78d5ff' : '#31cb9e',
+    blue: darkMode ? '#78d5ff' : '#ffa100',
     lightGreen: '#98E5CE',
     apr: '#0faaa2',
     shadow: darkMode ? 'rgba(0, 0, 0, 0.2)' : 'rgba(0, 0, 0, 0.04)',

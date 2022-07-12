@@ -101,7 +101,7 @@ const TopTrendingSoonTokensInCurrentNetwork = () => {
                 }}
               >
                 <Text color={theme.subText} fontWeight={500}>
-                  <Trans>Trending Soon</Trans>
+                  <Trans>Trending Token</Trans>
                 </Text>
                 <DiscoverIcon color={theme.subText} />
               </Flex>
@@ -122,28 +122,8 @@ const TopTrendingSoonTokensInCurrentNetwork = () => {
                   </React.Fragment>
                 ))}
               </Flex>
-              <ExternalLink
-                href={window.location.origin + '/discover?tab=trending_soon'}
-                onClickCapture={() => mixpanelHandler(MIXPANEL_TYPE.DISCOVER_SWAP_DISCOVER_MORE_CLICKED)}
-              >
-                <ButtonLight
-                  minWidth="fit-content"
-                  width="fit-content"
-                  height="100%"
-                  padding="7px 8px"
-                  borderRadius="20px"
-                  margin="0 0 0 12px"
-                  style={{ fontSize: '14px', whiteSpace: 'nowrap' }}
-                >
-                  <Trans>Discover more</Trans>
-                </ButtonLight>
-              </ExternalLink>
             </TrendingSoonTokensContainer>
-            <TextNote>
-              <Trans>
-                Powered by <span style={{ fontWeight: 700 }}>TrueSight</span>, our AI prediction model
-              </Trans>
-            </TextNote>
+
           </TrendingSoonTokensAndNoteContainer>
         </FadeInAnimation>
       </>
@@ -226,9 +206,11 @@ const TopTrendingSoonTokensInCurrentNetwork = () => {
               {topTrendingSoonTokens.map((tokenData, index) => (
                 <React.Fragment key={tokenData.token_id}>
                   <TopTrendingSoonTokenItem tokenData={tokenData} setSelectedToken={setSelectedToken} />
+
                   {index !== topTrendingSoonTokens.length - 1 && (
                     <div style={{ height: '16px', width: '0px', borderRight: '1px solid #40505A' }} />
                   )}
+                  
                 </React.Fragment>
               ))}
             </Flex>

@@ -406,7 +406,7 @@ export default function Header() {
           </HoverDropdown>
           */}
 
-          <HoverDropdown active={pathname.toLowerCase().includes('pools')}>
+          {/* <HoverDropdown active={pathname.toLowerCase().includes('pools')}>
             <Flex alignItems="center">
               <Trans>Earn</Trans>
               <DropdownIcon />
@@ -435,45 +435,17 @@ export default function Header() {
                 <Trans>My Pools</Trans>
               </StyledNavLink>
             </Dropdown>
-          </HoverDropdown>
-
-          {!under369 && (
-            <StyledNavLink id={`farms-nav-link`} to={'/farms'} isActive={match => Boolean(match)}>
-              <YieldMenuWrapper>
-                <Trans>Farm</Trans>
-              </YieldMenuWrapper>
-            </StyledNavLink>
-          )}
-
-          <DiscoverWrapper>
-            <StyledNavLink
-              to={'/discover?tab=trending_soon'}
-              isActive={match => Boolean(match)}
-              style={{ alignItems: 'center' }}
-            >
-              <SlideToUnlock
-                active={pathname.includes('discover') || isHoverSlide}
-                onMouseEnter={() => setIsHoverSlide(true)}
-                onMouseLeave={() => setIsHoverSlide(false)}
-              >
-                <Trans>Discover</Trans>
-              </SlideToUnlock>
-              <DiscoverIcon size={14} style={{ marginTop: '-20px', marginLeft: '4px' }} />
-            </StyledNavLink>
-          </DiscoverWrapper>
-
-          <CampaignWrapper>
-            <StyledNavLink id={`campaigns`} to={'/campaigns'} isActive={match => Boolean(match)}>
-              <Trans>Campaigns</Trans>
-              <NewLabel>
-                <Trans>New</Trans>
-              </NewLabel>
-            </StyledNavLink>
-          </CampaignWrapper>
+          </HoverDropdown> */}
 
           <AnalyticsWrapper>
-            <StyledNavExternalLink href={PROMM_ANALYTICS_URL[chainId as ChainId] + '/home'}>
-              <Trans>Analytics</Trans>
+            <StyledNavExternalLink href={"https://www.dextools.io/"}>
+              <Trans>Dextools Chart</Trans>
+            </StyledNavExternalLink>
+          </AnalyticsWrapper>
+
+          <AnalyticsWrapper>
+            <StyledNavExternalLink href={"https://www.dextools.io/"}>
+              <Trans>Website</Trans>
             </StyledNavExternalLink>
           </AnalyticsWrapper>
 

@@ -215,7 +215,7 @@ function Banner({
           <SwiperSlide key={index}>
             <Wrapper>
               <ExternalLink href={banner.link}>
-                <img src={banner.img} alt="banner" width="100%" />
+                {/* <img src={banner.img} alt="banner" width="100%" /> */}
               </ExternalLink>
               <Close color={theme.white} role="button" onClick={() => setShowBanner(false)} />
             </Wrapper>
