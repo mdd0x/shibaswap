@@ -168,12 +168,12 @@ export default function App() {
           id={isDarkTheme ? 'W5TeOyyH' : 'K0dtSO0v'}
           buttonText="Feedback"
           buttonColor={theme.primary}
-          customIcon={isDarkTheme ? 'https://i.imgur.com/iTOOKnr.png' : 'https://i.imgur.com/aPCpnGg.png'}
+          customIcon={isDarkTheme ? '' : ''}
         />
       ) : (
         <Popover
           id={isDarkTheme ? 'W5TeOyyH' : 'K0dtSO0v'}
-          customIcon={isDarkTheme ? 'https://i.imgur.com/iTOOKnr.png' : 'https://i.imgur.com/aPCpnGg.png'}
+          customIcon={isDarkTheme ? '' : ''}
         />
       )}
 
