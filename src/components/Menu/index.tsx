@@ -172,9 +172,9 @@ export default function Menu() {
   const { mixpanelHandler } = useMixpanel()
   return (
     <StyledMenu ref={node as any}>
-      <StyledMenuButton active={open} onClick={toggle} aria-label="Menu">
+      {/* <StyledMenuButton active={open} onClick={toggle} aria-label="Menu">
         <StyledMenuIcon />
-      </StyledMenuButton>
+      </StyledMenuButton> */}
 
       <MenuFlyout
         node={node}

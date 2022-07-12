@@ -100,10 +100,10 @@ const TopTrendingSoonTokensInCurrentNetwork = () => {
                   minWidth: 'fit-content',
                 }}
               >
-                <Text color={theme.subText} fontWeight={500}>
+                {/* <Text color={theme.subText} fontWeight={500}>
                   <Trans>Trending Token</Trans>
                 </Text>
-                <DiscoverIcon color={theme.subText} />
+                <DiscoverIcon color={theme.subText} /> */}
               </Flex>
               <Flex
                 ref={marqueeContainerRef}
@@ -159,19 +159,6 @@ const TopTrendingSoonTokensInCurrentNetwork = () => {
       <FadeInAnimation>
         <TrendingSoonTokensMobileContainer>
           <Flex justifyContent="space-between" alignItems="center">
-            <MouseoverTooltip text={t`Powered by TrueSight, our AI prediction model`}>
-              <TextTooltip
-                color={theme.subText}
-                fontSize="14px"
-                fontWeight={500}
-                style={{ display: 'flex', alignItems: 'center', gap: '4px' }}
-              >
-                <Text>
-                  <Trans>Trending Soon</Trans>
-                </Text>
-                <DiscoverIcon color={theme.subText} />
-              </TextTooltip>
-            </MouseoverTooltip>
             <ExternalLink
               href={window.location.origin + '/discover?tab=trending_soon'}
               target="_blank"
@@ -184,8 +171,8 @@ const TopTrendingSoonTokensInCurrentNetwork = () => {
                 justifyContent: 'flex-end',
               }}
             >
-              <Trans>Discover more</Trans>
-              <ChevronRight color={theme.primary} size={16} />
+              {/* <Trans>Discover more</Trans>
+              <ChevronRight color={theme.primary} size={16} /> */}
             </ExternalLink>
           </Flex>
           <Flex

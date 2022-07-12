@@ -163,20 +163,7 @@ export default function App() {
 
   return (
     <>
-      {width && width >= 768 ? (
-        <Sidetab
-          id={isDarkTheme ? 'W5TeOyyH' : 'K0dtSO0v'}
-          buttonText="Feedback"
-          buttonColor={theme.primary}
-          customIcon={isDarkTheme ? '' : ''}
-        />
-      ) : (
-        <Popover
-          id={isDarkTheme ? 'W5TeOyyH' : 'K0dtSO0v'}
-          customIcon={isDarkTheme ? '' : ''}
-        />
-      )}
-
+  
       {(!account || !BLACKLIST_WALLETS.includes(account)) && (
         <ApolloProvider client={classicClient}>
           <Route component={DarkModeQueryParamReader} />
