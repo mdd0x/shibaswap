@@ -26,6 +26,7 @@ export const PageWrapper = styled.div`
     gap: 24px;
     min-height: calc(100vh - 250px); // 100% - header - footer
     padding: 24px 16px;
+    margin-top:-45px;
 `}
 `
 

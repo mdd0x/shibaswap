@@ -66,7 +66,7 @@ export function colors(darkMode: boolean): Colors {
     // backgrounds
     tableHeader: darkMode ? '#303E46' : '#F9F9F9',
     background: darkMode ? '#1e222d' : '#ffffff',
-    bg1: darkMode ? '#212429' : '#FFFFFF',
+    bg1: darkMode ? '#131722' : '#FFFFFF',
     bg2: darkMode ? '#222c31' : '#F7F8FA',
     bg3: darkMode ? '#40444F' : '#dcdbdc',
     bg3Opacity4: darkMode ? '#40444F69' : '#69dcdbdc69',
